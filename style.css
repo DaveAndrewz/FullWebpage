@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Urbanist', sans-serif; */
+
+body {
+    font-size: 15px;
+    font-family: 'Urbanist', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #fffff0;
+}
+
+/* Setting style for each of the container class */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Removes the bullet points on the list items */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-1 {
+    height: 38px;
+    background-color: #727272;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fffff0;
+}
+
+.light, .dark {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light {
+    background-color: #ffffff;
+    color: #727272;
+}
+
+.dark {
+    background-color: #727272;
+    color: #ffffff;
+}
