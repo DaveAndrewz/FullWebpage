@@ -115,6 +115,7 @@ header #current a:hover {
     border-top: 3px solid #000000;
     color: #fffff0;
     padding: 15px;
+    border-bottom: 3px solid #000000;
 }
 
 #newsletter .container {
@@ -135,6 +136,7 @@ header #current a:hover {
 
 #boxes {
     margin-top: 20px;
+    border-bottom: 3px solid #000000;
 }
 
 /* Adding display-flex here puts them all in a row */
@@ -184,6 +186,10 @@ header #current a:hover {
 
 
 /* SERVICES SECTION */
+#services {
+    border-top: 3px solid #000000;
+}
+
 #services .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -209,6 +215,7 @@ header #current a:hover {
 
 /* FOOTER SECTION */
 footer {
+    border-top: 3px solid #000000;
     background-color: #3f3f3f;
     color: #fffff0;
     margin-top: 20px;
@@ -217,4 +224,29 @@ footer {
     text-align: center;
     letter-spacing: 10px;
     padding: 20px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 855px) {
+    header .container,
+    #newsletter .container,
+    #boxes .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #showcase .container {
+        padding-bottom: 50px;
+    }
+
+    #boxes .container .box {
+        width: 80%;
+    }
+
+    #about .container,
+    #services .container {
+        grid-template-columns: 100%;
+    }
 }
