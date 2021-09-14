@@ -8,43 +8,103 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #fffff0;
+    background-color: #white;
 }
 
 /* Setting style for each of the container class */
-
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
-/* Removes the bullet points on the list items */
 ul {
     margin: 0;
     padding: 0;
 }
-
 .btn-1 {
     height: 38px;
-    background-color: #727272;
+    background-color: #3f3f3f;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
     color: #fffff0;
 }
-
 .light, .dark {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .light {
-    background-color: #ffffff;
-    color: #727272;
+    background-color: #fffff0;
+    color: #3f3f3f;
+}
+.dark {
+    background-color: #3f3f3f;
+    color: #fffff0;
 }
 
-.dark {
-    background-color: #727272;
-    color: #ffffff;
+
+/* THIS IS GONNA STYLE THE HEADER SECTION */
+header { /* THIS IS THE NAV BAR */
+    background-color: #3f3f3f;
+    color: #fffff0;
+    /* Setting a min-height so the height for the header/nav section can expand */
+    min-height: 70px;
+    border-bottom: 3px solid #000000;
+    padding: 5px 0;
 }
+/* The flexbox here puts the items at either side of the page with "flex-start" */
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+/* Setting the height to 100% puts the list items in the middle when flexbox is added and align items is used */
+header ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    /* Removes the bullet points of the list items */
+    list-style: none;
+    padding: 0 25px;
+}
+header a {
+    color: #fffff0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+header .highlight, header #current a {
+    color: black;
+    font-weight: bold;
+}
+header a:hover {
+    color: rgb(131, 131, 131);
+    font-weight: bold;
+}
+header #current a:hover {
+    color: rgb(131, 131, 131);
+}
+
+
+
+/* THIS IS GONNA BE THE SHOWCASE SECTION */
+/* YOU CAN'T USE A VIDEO AS A BACKGROUND IMAGE */
+#showcase {
+    min-height: 400px;
+    background-image: url(Images/laptop.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fffff0;
+}
+#showcase h1 {
+    margin: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+#showcase p {
+    font-size: 20px;
+}
+
