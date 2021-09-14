@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: rgb(255, 254, 248);
+    background-color: #fffff0;
 }
 
 /* Setting style for each of the container class */
@@ -165,4 +165,21 @@ header #current a:hover {
 
 
 /* ABOUT SECTION */
+#about {
+    background-color: #3f3f3f;
+    padding: 20px;
+}
 
+#about .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+}
+
+#about .container .main-col {
+    color: #fffff0;
+}
+
+#about .container .sidebar {
+    margin-top: 20px;
+}
